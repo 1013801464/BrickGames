@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:tileMode="repeat"
+    android:src="@drawable/pattern"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+</bitmap>

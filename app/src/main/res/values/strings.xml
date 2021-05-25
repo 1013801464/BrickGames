@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BrickGames</string>
+    <string name="broadcast_open">广播服务器已打开</string>
+    <string name="broadcast_close">广播服务器已关闭</string>
+    <string name="error_getting_ip">获取IP地址失败</string>
+    <string name="server_receiver_action">com.ykh.brickgames.ServerReceiver</string>
+    <string name="client_service_action">com.ykh.brickgames.services.ClientService</string>
+</resources>

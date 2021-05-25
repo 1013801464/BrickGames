@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+
+        android:id="@+id/btnAbout"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/float_button_background_1"
+        android:text="关于"
+        android:textColor="#023d80"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3c939393" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btnScreenHoldOn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/float_button_background_2"
+        android:text="屏幕常亮"
+        android:textColor="#023d80"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3c939393" />
+
+    <Button
+        android:id="@+id/btnServer"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/float_button_background_2"
+        android:text="多人对战"
+        android:textColor="#023d80"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3c939393" />
+
+    <Button
+        android:id="@+id/btnServerOpen"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/float_button_background_2"
+        android:text="@string/broadcast_close"
+        android:textColor="#023d80"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#3c939393" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btnExitApp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/float_button_background_3"
+        android:text="退出"
+        android:textColor="#023d80"
+        android:textSize="18sp" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btnCancelMenu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/float_button_background_4"
+        android:text="取消"
+        android:textColor="#023d80"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:clipToPadding="false"
+	android:fitsSystemWindows="false"
+	android:background="@color/colorPrimary"
+	tools:context="com.ykh.brickgames.MainActivity">
+
+	<FrameLayout
+		android:id="@+id/screenLayout"
+		android:layout_width="300dp"
+		android:layout_height="375dp"
+		android:layout_marginTop="27dp"
+		android:padding="6dp"
+		android:layout_alignParentTop="true"
+		android:background="@drawable/square_shadow"
+		android:layout_centerHorizontal="true">
+
+		<com.ykh.brickgames.myViews.GameScreen
+			android:id="@+id/gameScreen"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="left|center_vertical"
+			android:layout_margin="4dp"
+			android:background="#c5c9ae"/>
+
+		<com.ykh.brickgames.myViews.ScoreScreen
+			android:id="@+id/scoreScreen"
+			android:layout_width="280dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="right|center_vertical"
+			android:layout_marginBottom="5dp"
+			android:layout_marginTop="5dp"/>
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="4dp"
+			android:scaleType="fitStart"
+			android:src="@drawable/kuang"/>
+	</FrameLayout>
+
+	<LinearLayout
+		android:id="@+id/操作按钮组"
+		style="?android:attr/buttonBarStyle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/screenLayout"
+		android:gravity="center_horizontal">
+
+		<ImageView
+			android:id="@+id/btnMusic"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_margin="10dp"
+			android:background="@drawable/circle_small_orange"
+			android:src="@drawable/sound_btn"/>
+
+		<ImageView
+			android:id="@+id/btnStartOrPause"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_margin="10dp"
+			android:background="@drawable/circle_small_orange"
+			android:src="@drawable/pause_btn"/>
+
+		<ImageView
+			android:id="@+id/btnMenu"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_margin="10dp"
+			android:background="@drawable/circle_small_orange"
+			android:src="@drawable/menu_btn"/>
+
+		<ImageView
+			android:id="@+id/btnReset"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_margin="10dp"
+			android:background="@drawable/circle_small_orange"
+			android:src="@drawable/reset_btn"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		android:layout_below="@id/操作按钮组"
+		android:gravity="center">
+
+		<com.ykh.brickgames.myViews.ControllerScreen
+			android:id="@+id/controller"
+			android:layout_width="150dp"
+			android:layout_height="match_parent"
+			android:layout_marginEnd="30dp"
+			android:layout_marginRight="30dp"/>
+
+		<Button
+			android:id="@+id/BigButton"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:layout_marginLeft="30dp"
+			android:layout_marginStart="30dp"
+			android:background="@drawable/circle_small_orange" />
+	</LinearLayout>
+
+
+</RelativeLayout>

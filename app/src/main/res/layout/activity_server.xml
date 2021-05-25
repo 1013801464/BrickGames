@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--Tab标题-->
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"><!--第一个页面-->
+            <FrameLayout
+                android:id="@+id/page1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include layout="@layout/server_page" />
+
+            </FrameLayout>
+
+            <!--第二个页面-->
+            <FrameLayout
+                android:id="@+id/page2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/client_page" />
+            </FrameLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+</TabHost>

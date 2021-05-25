@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!--按下的菜单-->
+	<item android:state_pressed="true">
+		<shape xmlns:android="http://schemas.android.com/apk/res/android"
+			   android:shape="rectangle">
+			<corners
+				android:bottomLeftRadius="5dp"
+				android:bottomRightRadius="5dp"
+				android:topLeftRadius="0dp"
+				android:topRightRadius="0dp"/>
+			<solid android:color="#af7f7f7f"/>
+		</shape>
+	</item>
+	<!--未按下的菜单-->
+	<item>
+		<shape xmlns:android="http://schemas.android.com/apk/res/android"
+			   android:shape="rectangle">
+			<corners
+				android:bottomLeftRadius="5dp"
+				android:bottomRightRadius="5dp"
+				android:topLeftRadius="0dp"
+				android:topRightRadius="0dp"/>
+			<solid android:color="#afffffff"/>
+		</shape>
+	</item>
+
+</selector>
